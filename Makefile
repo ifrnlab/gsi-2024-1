@@ -74,7 +74,7 @@ htmlview: html
 
 .PHONY: htmllive
 htmllive: SPHINXBUILD = $(VENVDIR)/bin/sphinx-autobuild
-htmllive: SPHINXOPTS = --ignore "*.swp" --open-browser --port 8084
+htmllive: SPHINXOPTS = --ignore "*.swp" --open-browser --port 0
 htmllive: 
 	$(SPHINXBUILD) $(SPHINXOPTS) "$(SOURCEDIR)" "$(BUILDDIR)/html"
 
